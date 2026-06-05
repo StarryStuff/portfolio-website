@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(xdg-open index.html)"
-    ]
-  }
-}
