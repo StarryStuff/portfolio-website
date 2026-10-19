@@ -482,17 +482,17 @@ main { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
   .avatar-emoji { font-size: 4.6rem; }
 }
 
-.about-card {
-  background: #fff;
-  border: 3px solid #fff;
-  box-shadow: 0 10px 30px var(--shadow-soft);
-  padding: 36px 40px;
-  max-width: 760px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 1.1rem;
+.hero-role {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 22px;
+  font-family: "Baloo 2", cursive;
+  font-weight: 800;
+  font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+  color: #fff;
+  background: linear-gradient(120deg, var(--pink-deep), var(--coral));
+  box-shadow: 0 8px 22px var(--shadow-pink);
 }
-.about-card p + p { margin-top: 14px; }
 
 .award-media {
   position: relative;
