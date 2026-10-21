@@ -598,3 +598,38 @@ main { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 .award-media.has-logo { background: var(--logo-bg, #fff); }
 .award-media .award-logo { object-fit: contain; padding: var(--logo-pad, 13% 16%); }
 .award-feature .award-media .award-logo { padding: 8%; }
+
+/* Game Design Works page */
+a.card { display: block; color: inherit; }
+
+.page-head {
+  text-align: center;
+  padding: 140px 0 10px;
+}
+
+.back-link {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--pink-deep);
+  margin-bottom: 18px;
+  transition: transform 0.25s var(--ease);
+}
+.back-link:hover { transform: translateX(-4px); }
+
+.page-title {
+  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  font-weight: 800;
+  background: linear-gradient(120deg, var(--pink-deep), var(--coral), var(--grape));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page-sub { margin-top: 10px; color: var(--ink-soft); font-size: 1.1rem; }
+
+.page-grid-section { padding-top: 40px; }
+
+.grid-works { grid-template-columns: repeat(3, 1fr); }
+
+@media (max-width: 900px) { .grid-works { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .grid-works { grid-template-columns: 1fr; } }
