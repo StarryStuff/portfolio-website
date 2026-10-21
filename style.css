@@ -448,12 +448,12 @@ main { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
   font-size: 0.95rem;
 }
 
-.reveal {
+.js .reveal {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
 }
-.reveal.in-view { opacity: 1; transform: translateY(0); }
+.js .reveal.in-view { opacity: 1; transform: translateY(0); }
 
 @media (max-width: 900px) {
   .grid-art, .grid-games { grid-template-columns: repeat(2, 1fr); }
