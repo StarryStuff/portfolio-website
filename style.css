@@ -633,3 +633,108 @@ a.card { display: block; color: inherit; }
 
 @media (max-width: 900px) { .grid-works { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px) { .grid-works { grid-template-columns: 1fr; } }
+
+/* Case study pages */
+.cs { max-width: 960px; }
+
+.cs-hero { text-align: center; padding: 140px 0 30px; }
+.cs-eyebrow {
+  font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--pink-deep); font-size: 0.85rem; margin-bottom: 6px;
+}
+.cs-tagline {
+  max-width: 640px; margin: 14px auto 0;
+  font-size: 1.15rem; color: var(--ink);
+}
+.cs-chips { justify-content: center; }
+.cs-cta { display: flex; align-items: center; gap: 14px; margin-top: 26px; flex-wrap: wrap; }
+.cs-hero .cs-cta { justify-content: center; }
+.cs-cta-center { justify-content: center; }
+.cs-award {
+  background: linear-gradient(120deg, var(--lemon), var(--peach));
+  color: var(--ink); font-weight: 700; font-size: 0.95rem;
+  padding: 10px 18px; border: 2px solid #fff; box-shadow: 0 6px 18px var(--shadow-soft);
+}
+
+.cs-media { margin: 28px 0 0; }
+.cs-media-ph {
+  min-height: 260px; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 4px;
+  background: linear-gradient(140deg, var(--pink), var(--lav));
+  border: 4px solid #fff; box-shadow: 0 14px 40px var(--shadow-soft);
+  color: #fff; font-weight: 700; text-align: center; padding: 24px;
+}
+.cs-media-ph span { font-size: 2rem; }
+.cs-media-hero .cs-media-ph { min-height: 380px; background: linear-gradient(140deg, var(--pink-deep), var(--coral), var(--lav)); }
+.cs-media img { width: 100%; display: block; border: 4px solid #fff; box-shadow: 0 14px 40px var(--shadow-soft); }
+.cs-media figcaption { margin-top: 10px; text-align: center; font-style: italic; font-size: 0.92rem; color: var(--ink-soft); }
+
+.cs-section { padding: 44px 0; }
+.cs-h2 {
+  font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 800; color: var(--grape);
+  margin-bottom: 20px; display: flex; align-items: center; gap: 12px;
+}
+.cs-num {
+  font-size: 0.95rem; font-weight: 800; color: #fff;
+  background: linear-gradient(120deg, var(--pink-deep), var(--coral));
+  padding: 4px 12px; box-shadow: 0 6px 16px var(--shadow-pink);
+}
+
+.cs-facts {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+}
+.cs-facts > div {
+  background: #fff; border: 3px solid #fff; box-shadow: 0 10px 26px var(--shadow-soft);
+  padding: 16px 18px;
+}
+.cs-facts dt {
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 1.4px;
+  text-transform: uppercase; color: var(--pink-deep);
+}
+.cs-facts dd { margin-top: 4px; font-weight: 600; color: var(--ink); }
+
+.cs-two { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; }
+.cs-p { font-size: 1.05rem; line-height: 1.7; color: var(--ink); }
+.cs-p + .cs-p { margin-top: 12px; }
+.cs-list { list-style: none; display: grid; gap: 10px; }
+.cs-list li {
+  position: relative; padding-left: 28px; font-weight: 600;
+}
+.cs-list li::before { content: "✦"; position: absolute; left: 0; color: var(--pink-deep); }
+
+.cs-cps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.cs-card {
+  background: #fff; border: 3px solid #fff; box-shadow: 0 10px 28px var(--shadow-soft);
+  padding: 22px 22px 24px; border-top: 8px solid var(--pink);
+}
+.cs-card h3 { font-size: 1.3rem; font-weight: 800; margin-bottom: 10px; }
+.cs-card ul { list-style: none; display: grid; gap: 8px; }
+.cs-card li { position: relative; padding-left: 18px; color: var(--ink); line-height: 1.5; }
+.cs-card li::before { content: "•"; position: absolute; left: 2px; color: var(--pink-deep); font-weight: 800; }
+.cs-challenge { border-top-color: var(--pink-deep); }
+.cs-challenge h3 { color: var(--pink-deep); }
+.cs-solution { border-top-color: var(--lav); }
+.cs-solution h3 { color: var(--grape); }
+.cs-impact { border-top-color: #5fd3a3; }
+.cs-impact h3 { color: #2f9c72; }
+
+.cs-reflect {
+  background: #fff; border: 3px solid #fff; box-shadow: 0 10px 28px var(--shadow-soft);
+  padding: 28px 32px;
+}
+
+.cs-closing { text-align: center; padding-bottom: 80px; }
+.cs-closing .cs-h2 { justify-content: center; }
+
+/* placeholder text to replace: shows soft and italic so it's easy to spot */
+.todo { font-style: italic; color: var(--ink-soft); }
+
+@media (max-width: 900px) {
+  .cs-facts { grid-template-columns: repeat(2, 1fr); }
+  .cs-two { grid-template-columns: 1fr; gap: 28px; }
+  .cs-cps { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .cs-facts { grid-template-columns: 1fr; }
+  .cs-media-hero .cs-media-ph { min-height: 240px; }
+}
