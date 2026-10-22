@@ -818,3 +818,80 @@ a.card { display: block; color: inherit; }
   .gallery-slide .cs-media-ph, .gallery-slide img { min-height: 240px; height: 240px; }
   .gallery-btn { width: 40px; height: 40px; }
 }
+
+/* Core loop diagram */
+.loop { margin: 30px 0 0; padding-top: 24px; }
+.loop-flow { display: flex; align-items: center; justify-content: center; gap: 10px; }
+.loop-node {
+  position: relative; flex: 1; text-align: center;
+  background: #fff; border: 3px solid #fff; box-shadow: 0 12px 30px var(--shadow-soft);
+  padding: 30px 16px 20px; border-top: 8px solid var(--pink-deep);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.loop-node:hover { transform: translateY(-5px); box-shadow: 0 18px 38px var(--shadow-pink); }
+.loop-n2 { border-top-color: var(--lav); }
+.loop-n3 { border-top-color: #5fd3a3; }
+.loop-step {
+  position: absolute; top: -22px; left: 50%; transform: translateX(-50%);
+  width: 34px; height: 34px; display: flex; align-items: center; justify-content: center;
+  font-family: "Baloo 2", cursive; font-weight: 800; color: #fff;
+  background: linear-gradient(120deg, var(--pink-deep), var(--coral));
+  border: 3px solid #fff; box-shadow: 0 6px 16px var(--shadow-pink);
+}
+.loop-n2 .loop-step { background: linear-gradient(120deg, var(--grape), var(--lav)); }
+.loop-n3 .loop-step { background: linear-gradient(120deg, #2f9c72, #5fd3a3); }
+.loop-node h4 { font-family: "Baloo 2", cursive; font-size: 1.5rem; font-weight: 800; color: var(--ink); line-height: 1.1; }
+.loop-node p { margin-top: 4px; font-weight: 600; color: var(--ink-soft); font-size: 0.98rem; }
+.loop-arrow { flex: 0 0 auto; font-size: 1.6rem; color: var(--pink-deep); }
+
+.loop-return {
+  position: relative; margin: 14px 16.5% 0; height: 54px;
+  border: 3px dashed var(--pink); border-top: none; border-radius: 0 0 46px 46px;
+}
+.loop-return::before {
+  content: ""; position: absolute; left: -9px; top: -12px;
+  border-left: 7px solid transparent; border-right: 7px solid transparent;
+  border-bottom: 12px solid var(--pink-deep);
+}
+.loop-return span {
+  position: absolute; left: 50%; bottom: -13px; transform: translateX(-50%);
+  background: #fff; padding: 3px 14px; white-space: nowrap; box-shadow: 0 4px 12px var(--shadow-soft);
+  font-size: 0.85rem; font-weight: 700; color: var(--pink-deep);
+}
+
+.loop-oxygen {
+  position: relative; overflow: hidden; margin-top: 42px; text-align: center;
+  padding: 22px 20px 24px;
+  background: linear-gradient(120deg, var(--sky), #c9e6ff 55%, var(--lav));
+  border: 3px solid #fff; box-shadow: 0 12px 30px var(--shadow-soft);
+}
+.loop-oxygen h4 { position: relative; font-family: "Baloo 2", cursive; font-size: 1.5rem; font-weight: 800; color: var(--ink); line-height: 1.1; }
+.loop-oxygen p { position: relative; margin-top: 4px; font-weight: 600; color: var(--ink); opacity: 0.8; font-size: 0.98rem; }
+.loop-bubbles i {
+  position: absolute; bottom: -14px; width: 14px; height: 14px; border-radius: 50%;
+  background: rgba(255, 255, 255, 0.65); border: 2px solid rgba(255, 255, 255, 0.9);
+  animation: bubble-up 5s ease-in infinite;
+}
+.loop-bubbles i:nth-child(1) { left: 8%;  animation-delay: 0s; }
+.loop-bubbles i:nth-child(2) { left: 28%; animation-delay: -1.5s; width: 10px; height: 10px; }
+.loop-bubbles i:nth-child(3) { left: 52%; animation-delay: -3s; }
+.loop-bubbles i:nth-child(4) { left: 74%; animation-delay: -0.8s; width: 10px; height: 10px; }
+.loop-bubbles i:nth-child(5) { left: 92%; animation-delay: -2.3s; }
+@keyframes bubble-up {
+  0% { transform: translateY(0); opacity: 0; }
+  15% { opacity: 1; }
+  100% { transform: translateY(-110px); opacity: 0; }
+}
+.loop figcaption { margin-top: 14px; text-align: center; font-style: italic; font-size: 0.92rem; color: var(--ink-soft); }
+
+@media (max-width: 760px) {
+  .loop-flow { flex-direction: column; gap: 8px; }
+  .loop-node { width: 100%; margin-top: 18px; }
+  .loop-arrow { transform: rotate(90deg); margin: 2px 0; }
+  .loop-return { margin: 14px 8% 0; }
+  .loop-return span { white-space: normal; text-align: center; width: 70%; }
+  .loop-oxygen { margin-top: 38px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .loop-bubbles i { animation: none; opacity: 0.6; bottom: 8px; }
+}
