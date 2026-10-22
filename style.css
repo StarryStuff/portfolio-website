@@ -680,8 +680,25 @@ a.card { display: block; color: inherit; }
   padding: 4px 12px; box-shadow: 0 6px 16px var(--shadow-pink);
 }
 
+.cs-facts-layout {
+  display: grid; grid-template-columns: 1.5fr 1fr; gap: 16px; align-items: stretch;
+}
 .cs-facts {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
+}
+.cs-tools {
+  background: #fff; border: 3px solid #fff; box-shadow: 0 10px 26px var(--shadow-soft);
+  padding: 20px 22px;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.cs-tools-title {
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 1.4px;
+  text-transform: uppercase; color: var(--pink-deep); margin-bottom: 12px;
+}
+.cs-tool-list { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.cs-tool-list li {
+  background: var(--pink-bg); color: var(--pink-deep);
+  font-weight: 700; font-size: 0.9rem; padding: 6px 14px;
 }
 .cs-facts > div {
   background: #fff; border: 3px solid #fff; box-shadow: 0 10px 26px var(--shadow-soft);
@@ -698,7 +715,7 @@ a.card { display: block; color: inherit; }
 .cs-p + .cs-p { margin-top: 12px; }
 .cs-list { list-style: none; display: grid; gap: 10px; }
 .cs-list li {
-  position: relative; padding-left: 28px; font-weight: 600;
+  position: relative; padding-left: 28px; font-weight: 600; font-size: 0.97rem; line-height: 1.5;
 }
 .cs-list li::before { content: "✦"; position: absolute; left: 0; color: var(--pink-deep); }
 
@@ -709,7 +726,7 @@ a.card { display: block; color: inherit; }
 }
 .cs-card h3 { font-size: 1.3rem; font-weight: 800; margin-bottom: 10px; }
 .cs-card ul { list-style: none; display: grid; gap: 8px; }
-.cs-card li { position: relative; padding-left: 18px; color: var(--ink); line-height: 1.5; }
+.cs-card li { position: relative; padding-left: 18px; color: var(--ink); line-height: 1.5; font-size: 0.93rem; }
 .cs-card li::before { content: "•"; position: absolute; left: 2px; color: var(--pink-deep); font-weight: 800; }
 .cs-challenge { border-top-color: var(--pink-deep); }
 .cs-challenge h3 { color: var(--pink-deep); }
@@ -730,7 +747,7 @@ a.card { display: block; color: inherit; }
 .todo { font-style: italic; color: var(--ink-soft); }
 
 @media (max-width: 900px) {
-  .cs-facts { grid-template-columns: repeat(2, 1fr); }
+  .cs-facts-layout { grid-template-columns: 1fr; }
   .cs-two { grid-template-columns: 1fr; gap: 28px; }
   .cs-cps { grid-template-columns: 1fr; }
 }
