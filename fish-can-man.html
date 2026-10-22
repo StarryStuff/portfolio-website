@@ -65,13 +65,25 @@
     <!-- QUICK FACTS -->
     <section class="cs-section reveal">
       <h2 class="cs-h2">Quick Facts</h2>
-      <dl class="cs-facts">
-        <div><dt>My role</dt><dd>Game Designer</dd></div>
-        <div><dt>Platform</dt><dd>Windows (PC)</dd></div>
-        <div><dt>Timeline</dt><dd>5 months</dd></div>
-        <div><dt>Engine / Tools</dt><dd class="todo">Add engine &amp; tools</dd></div>
-        <div><dt>Status</dt><dd>In development · hoping for Steam</dd></div>
-      </dl>
+      <div class="cs-facts-layout">
+        <dl class="cs-facts">
+          <div><dt>My role</dt><dd>Game Designer &amp; Producer</dd></div>
+          <div><dt>Platform</dt><dd>Windows (PC)</dd></div>
+          <div><dt>Timeline</dt><dd>5 months</dd></div>
+          <div><dt>Status</dt><dd>In development · hoping for Steam</dd></div>
+        </dl>
+        <div class="cs-tools">
+          <p class="cs-tools-title">Engine &amp; Tools</p>
+          <ul class="cs-tool-list">
+            <li>Unity</li>
+            <li>Blender</li>
+            <li>GitHub</li>
+            <li>Excel</li>
+            <li>Trello</li>
+            <li>Affinity</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- SUMMARY -->
@@ -84,10 +96,11 @@
       <div>
         <h2 class="cs-h2">My Responsibilities</h2>
         <ul class="cs-list">
-          <li class="todo">Add responsibility, e.g. designed the core loop and control scheme</li>
-          <li class="todo">Add responsibility, e.g. designed and documented puzzles</li>
-          <li class="todo">Add responsibility, e.g. ran playtests and iterated on feedback</li>
-          <li class="todo">Add responsibility, e.g. produced and scheduled the team's work</li>
+          <li>Designed the core gameplay loop, the mechanics and the control scheme</li>
+          <li>Designed and documented the puzzles</li>
+          <li>Did the level design and wrote the dialogue</li>
+          <li>Produced the project and scheduled the team's work</li>
+          <li>Stepped in wherever the team needed a hand: I picked up UI and sound design, and helped make the photos and images placed around the room</li>
         </ul>
       </div>
     </section>
@@ -99,28 +112,30 @@
         <article class="cs-card cs-challenge">
           <h3>Challenge</h3>
           <ul>
-            <li class="todo">What problem did you need to solve?</li>
-            <li class="todo">What made it hard?</li>
+            <li>Give players a clear goal, but still make them want to explore, experiment and poke at the environment.</li>
+            <li>Make every stage of progression feel like it matters, instead of just handing players more ways to move.</li>
           </ul>
         </article>
         <article class="cs-card cs-solution">
           <h3>Solution</h3>
           <ul>
-            <li class="todo">What did you design or build?</li>
-            <li class="todo">Which tools or methods did you use?</li>
+            <li>Built the loop around exploring the scientist's house, managing oxygen, solving environmental puzzles and collecting trinkets to reach the Kraken.</li>
+            <li>Split progression into three movement stages: flopping first, then arms for grabbing and climbing, then legs for walking.</li>
+            <li>Wrote everything up in a detailed Game Design Document (GDD) so the programmer and 3D artist knew exactly what experience we were going for.</li>
           </ul>
         </article>
         <article class="cs-card cs-impact">
           <h3>Impact</h3>
           <ul>
-            <li class="todo">What changed because of it?</li>
-            <li class="todo">Playtest result, or a number if you have one</li>
+            <li>The game now has a clear path from exploring, to solving puzzles, to the final goal.</li>
+            <li>Every new limb changes how you deal with the room, which fits our focus on progressive mechanics and player agency.</li>
+            <li>In user acceptance testing (UAT), physics-based movement scored 5/5, and so did exploring beyond the obvious routes.</li>
           </ul>
         </article>
       </div>
       <figure class="cs-media">
         <div class="cs-media-ph"><span>✦</span><p>Core loop diagram goes here</p></div>
-        <figcaption>Add a caption, e.g. the core loop from tank to kraken.</figcaption>
+        <figcaption class="todo">Add a caption, e.g. the core loop from tank to kraken.</figcaption>
       </figure>
     </section>
 
@@ -131,25 +146,30 @@
         <article class="cs-card cs-challenge">
           <h3>Challenge</h3>
           <ul>
-            <li class="todo">How do you make controls hard without making them unfair?</li>
+            <li>Make physics-based controls that are weird and difficult on purpose, but still rewarding to learn rather than random or impossible.</li>
+            <li>Make sure each new limb does something different, so the earlier mechanics don't become pointless.</li>
           </ul>
         </article>
         <article class="cs-card cs-solution">
           <h3>Solution</h3>
           <ul>
-            <li class="todo">How the controls and physics work, and how you tuned them</li>
+            <li>Designed a physics-driven movement system around flopping, ragdoll movement, grabbing, climbing and walking.</li>
+            <li>Gave each stage of progression its own job, so players can tackle obstacles in different ways.</li>
+            <li>Introduced each mechanic through level layouts, puzzles and hazards, so players get room to learn and mess around.</li>
+            <li>Documented the controls, interactions and intended behaviour so the programmer had clear requirements.</li>
           </ul>
         </article>
         <article class="cs-card cs-impact">
           <h3>Impact</h3>
           <ul>
-            <li class="todo">What players said or did when they played it</li>
+            <li>Ended up with a movement system built around experimenting and slowly getting better at awkward controls.</li>
+            <li>In UAT, players gave physics-based movement 5/5, and said the different limbs changed how they approached challenges (4.33/5 on average).</li>
           </ul>
         </article>
       </div>
       <figure class="cs-media">
         <div class="cs-media-ph"><span>✦</span><p>Controls image or GIF goes here</p></div>
-        <figcaption>Add a caption, e.g. the control scheme.</figcaption>
+        <figcaption class="todo">Add a caption, e.g. the control scheme.</figcaption>
       </figure>
     </section>
 
@@ -160,25 +180,33 @@
         <article class="cs-card cs-challenge">
           <h3>Challenge</h3>
           <ul>
-            <li class="todo">What did the puzzles and levels need to teach or test?</li>
+            <li>Teach players unfamiliar controls and newly unlocked mechanics through puzzles and hazards that get harder over time.</li>
+            <li>Make sure new abilities create meaningful interactions in every level, with clear objectives but room to try different routes.</li>
+            <li>Turn gameplay ideas into layouts that the programmer and 3D artist could build consistently.</li>
           </ul>
         </article>
         <article class="cs-card cs-solution">
           <h3>Solution</h3>
           <ul>
-            <li class="todo">How you laid out the puzzles, limbs and items</li>
+            <li>Designed puzzles, hazards, collectibles and traversal challenges around what the player can do at each stage.</li>
+            <li>Made level blockouts to show routes, platform placement, puzzle spots and interactions before the detailed environment work started.</li>
+            <li>Listed the environment requirements and models we needed to guide the 3D artist's modelling and set dressing.</li>
+            <li>Designed the puzzle logic and progression requirements, and wrote the funny environmental dialogue, including the wall-mounted Billy Bass.</li>
+            <li>Kept detailed design documents so gameplay, level building and the intended experience all lined up.</li>
           </ul>
         </article>
         <article class="cs-card cs-impact">
           <h3>Impact</h3>
           <ul>
-            <li class="todo">What playtests showed and what you changed</li>
+            <li>Players go from learning basic movement to using their abilities on trickier environmental challenges.</li>
+            <li>UAT scored 4.67/5 for clear routes and objectives, 4.33/5 for different paths and approaches, and 4.67/5 for abilities encouraging exploring and revisiting.</li>
+            <li>Used the testing feedback to check whether the levels were getting objectives across and encouraging experimentation.</li>
           </ul>
         </article>
       </div>
       <figure class="cs-media">
         <div class="cs-media-ph"><span>✦</span><p>Level layout or puzzle breakdown goes here</p></div>
-        <figcaption>Add a caption, e.g. a level map or puzzle flowchart.</figcaption>
+        <figcaption class="todo">Add a caption, e.g. a level blockout or puzzle flowchart.</figcaption>
       </figure>
     </section>
 
@@ -186,7 +214,8 @@
     <section class="cs-section reveal">
       <h2 class="cs-h2">What I Learned</h2>
       <div class="cs-reflect">
-        <p class="cs-p todo">Write 2 to 4 sentences on what went well, what was hard, and what you'd do differently.</p>
+        <p class="cs-p">Working on Fish Can Man taught me how to take a research idea and turn it into gameplay systems that a whole team could actually build. My biggest challenge was making sure every new mechanic added something without making the earlier abilities feel useless.</p>
+        <p class="cs-p">I also learned how much clear documentation and level blockouts matter when you're passing your design intent on to the programmer and 3D artist. With more time, I'd add more reasons to go back and re-explore, and test the game with a bigger group of players.</p>
       </div>
     </section>
 
