@@ -895,3 +895,16 @@ a.card { display: block; color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   .loop-bubbles i { animation: none; opacity: 0.6; bottom: 8px; }
 }
+
+/* Side-by-side image pair */
+.cs-pair-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: center;
+}
+.cs-pair-grid img { width: 100%; aspect-ratio: 4 / 3; display: block; }
+.cs-pair-paper { object-fit: contain; filter: drop-shadow(0 10px 22px var(--shadow-soft)); }
+.cs-pair-grid img.cs-pair-shot {
+  object-fit: cover; border: 4px solid #fff; box-shadow: 0 14px 40px var(--shadow-soft);
+}
+@media (max-width: 640px) {
+  .cs-pair-grid { grid-template-columns: 1fr; }
+}
