@@ -44,7 +44,7 @@ a { text-decoration: none; color: inherit; }
   z-index: -2;
   pointer-events: none;
   filter: blur(60px);
-  opacity: 0.55;
+  opacity: 0.47;
 }
 
 .blob {
