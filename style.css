@@ -771,7 +771,8 @@ a.card { display: block; color: inherit; }
 .gallery-slide .cs-media-ph { min-height: 400px; }
 .gallery-slide img {
   width: 100%;
-  height: 400px;
+  aspect-ratio: 16 / 9;
+  height: auto;
   object-fit: cover;
   display: block;
   border: 4px solid #fff;
@@ -815,7 +816,7 @@ a.card { display: block; color: inherit; }
 .gallery-dot.active { background: var(--pink-deep); transform: scale(1.3); }
 
 @media (max-width: 640px) {
-  .gallery-slide .cs-media-ph, .gallery-slide img { min-height: 240px; height: 240px; }
+  .gallery-slide .cs-media-ph { min-height: 240px; }
   .gallery-btn { width: 40px; height: 40px; }
 }
 
@@ -907,4 +908,31 @@ a.card { display: block; color: inherit; }
 }
 @media (max-width: 640px) {
   .cs-pair-grid { grid-template-columns: 1fr; }
+}
+
+/* Cover image */
+.cs-media-hero { position: relative; }
+.cs-media-hero [hidden], .cs-media [hidden] { display: none !important; }
+.cs-cover {
+  width: 100%; height: auto; display: block;
+  border: 4px solid #fff; box-shadow: 0 14px 40px var(--shadow-soft);
+}
+
+/* Three level design images, equal height side by side */
+.cs-trio { display: flex; gap: 18px; align-items: flex-start; margin-top: 28px; }
+.cs-trio-item { flex: var(--grow, 1) 1 0; min-width: 0; margin: 0; }
+.cs-trio-item img {
+  width: 100%; height: auto; display: block;
+  border: 4px solid #fff; box-shadow: 0 14px 40px var(--shadow-soft); background: #fff;
+}
+.cs-trio-item figcaption {
+  margin-top: 10px; text-align: center; font-size: 0.88rem; line-height: 1.4; color: var(--ink-soft);
+}
+.cs-trio-item figcaption strong {
+  display: block; font-family: "Baloo 2", cursive; font-size: 1rem; color: var(--pink-deep);
+}
+@media (max-width: 760px) {
+  .cs-trio { flex-direction: column; align-items: stretch; }
+  .cs-trio-item { flex: none; }
+  .cs-trio-item:last-child { width: 60%; align-self: center; }
 }
