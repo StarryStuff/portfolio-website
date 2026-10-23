@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OutPatients · Azwa Al Islam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+    <span class="blob blob-4"></span>
+  </div>
+
+  <div class="stars" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-star">✦</span>
+      <span class="logo-text">StarryStuff</span>
+    </a>
+    <nav class="nav-links">
+      <a href="game-design-works.html">Game Design</a>
+      <a href="index.html#awards">Achievements</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top" class="cs">
+
+    <!-- HERO -->
+    <section class="cs-hero reveal">
+      <a href="game-design-works.html" class="back-link">← Game Design Works</a>
+      <p class="cs-eyebrow">Case Study</p>
+      <h1 class="page-title">OutPatients</h1>
+      <p class="cs-tagline">Cherri and Luth are trapped in an abandoned hospital and have to cooperate to escape.</p>
+      <div class="hero-tags cs-chips">
+        <span class="pill">Co-op</span>
+      </div>
+      <div class="cs-cta">
+        <a href="https://starrystuff.itch.io/outpatients" target="_blank" rel="noopener" class="btn btn-primary">Play on itch.io</a>
+        <span class="cs-award">🏆 1st Place in Malaysia · Better Ground 2025</span>
+      </div>
+      <p class="cs-nom">Flown out to Korea by KRAFTON to represent Malaysia</p>
+    </section>
+
+    <!-- COVER IMAGE -->
+    <section class="reveal">
+      <div class="cs-media cs-media-hero">
+        <div class="cs-media-ph"><span>✦</span><p>OutPatients</p></div>
+        <img class="cs-cover" hidden src="assets/outpatients/cover.jpg" data-alt="assets/outpatients/cover.png,assets/outpatients/cover.gif" alt="OutPatients gameplay"
+             onload="this.hidden=false;var p=this.previousElementSibling;if(p)p.hidden=true"
+             onerror="var f=(this.dataset.alt||'').split(',').filter(Boolean);if(f.length){this.dataset.alt=f.slice(1).join(',');this.src=f[0]}else{this.remove()}" />
+      </div>
+    </section>
+
+    <!-- QUICK FACTS -->
+    <section class="cs-section reveal">
+      <h2 class="cs-h2">Quick Facts</h2>
+      <dl class="cs-facts-4">
+          <div><dt>My role</dt><dd><span class="todo">Add this</span></dd></div>
+          <div><dt>Event</dt><dd>Better Ground 2025</dd></div>
+          <div><dt>Team</dt><dd><span class="todo">Add this</span></dd></div>
+          <div><dt>Status</dt><dd>Released on itch.io</dd></div>
+      </dl>
+    </section>
+
+    <!-- SUMMARY -->
+    <section class="cs-section cs-two reveal">
+      <div>
+        <h2 class="cs-h2">The Game</h2>
+        <p class="cs-p">Two characters, Cherri and Luth, are trapped in an abandoned hospital and have to work together to escape.</p>
+      </div>
+      <div>
+        <h2 class="cs-h2">My Responsibilities</h2>
+        <ul class="cs-list">
+          <li class="todo">Add what you did, e.g. designed the core mechanics</li>
+          <li class="todo">Add what you did, e.g. level design or puzzle design</li>
+          <li class="todo">Add what you did, e.g. production or documentation</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- DESIGN HIGHLIGHT -->
+    <section class="cs-section reveal">
+      <h2 class="cs-h2"><span class="cs-num">01</span> Design Highlight</h2>
+      <div class="cs-cps">
+        <article class="cs-card cs-challenge">
+          <h3>Challenge</h3>
+          <ul>
+            <li class="todo">What problem did you need to solve?</li>
+          </ul>
+        </article>
+        <article class="cs-card cs-solution">
+          <h3>Solution</h3>
+          <ul>
+            <li class="todo">What did you design or build?</li>
+          </ul>
+        </article>
+        <article class="cs-card cs-impact">
+          <h3>Impact</h3>
+          <ul>
+            <li class="todo">What changed because of it?</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="cs-section reveal" id="gallery">
+      <h2 class="cs-h2">Gallery</h2>
+      <div class="gallery" data-gallery>
+        <div class="gallery-viewport">
+          <div class="gallery-track">
+            <figure class="gallery-slide">
+              <div class="cs-media-ph"><span>✦</span><p>Photo or screenshot 1</p></div>
+              <figcaption class="todo">Add a caption.</figcaption>
+            </figure>
+            <figure class="gallery-slide">
+              <div class="cs-media-ph"><span>✦</span><p>Photo or screenshot 2</p></div>
+              <figcaption class="todo">Add a caption.</figcaption>
+            </figure>
+            <figure class="gallery-slide">
+              <div class="cs-media-ph"><span>✦</span><p>Photo or screenshot 3</p></div>
+              <figcaption class="todo">Add a caption.</figcaption>
+            </figure>
+          </div>
+          <button class="gallery-btn gallery-prev" type="button" aria-label="Previous image">‹</button>
+          <button class="gallery-btn gallery-next" type="button" aria-label="Next image">›</button>
+        </div>
+        <div class="gallery-dots" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- CLOSING -->
+    <section class="cs-section cs-closing reveal">
+      <h2 class="cs-h2">Want to try it?</h2>
+      <div class="cs-cta cs-cta-center">
+        <a href="https://starrystuff.itch.io/outpatients" target="_blank" rel="noopener" class="btn btn-primary">Play on itch.io</a>
+        <a href="game-design-works.html" class="btn btn-ghost">More game design works</a>
+        <a href="index.html#contact" class="btn btn-ghost">Let's connect</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made with ♡ by Azwa Al Islam · StarryStuff</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
