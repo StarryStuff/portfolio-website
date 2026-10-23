@@ -58,7 +58,10 @@
     <!-- COVER IMAGE -->
     <section class="reveal">
       <div class="cs-media cs-media-hero">
-        <div class="cs-media-ph"><span>✦</span><p>Key art / gameplay GIF goes here</p></div>
+        <div class="cs-media-ph"><span>✦</span><p>Fish Can Man</p></div>
+        <img class="cs-cover" hidden src="assets/fish-can-man/cover.jpg" data-alt="assets/cover.jpg,cover.jpg,assets/fish-can-man/cover.gif" alt="Fish Can Man gameplay: Sardonious the sardine in the scientist's kitchen"
+             onload="this.hidden=false;var p=this.previousElementSibling;if(p)p.hidden=true"
+             onerror="var f=(this.dataset.alt||'').split(',').filter(Boolean);if(f.length){this.dataset.alt=f.slice(1).join(',');this.src=f[0]}else{this.remove()}" />
       </div>
     </section>
 
@@ -234,10 +237,20 @@
           </ul>
         </article>
       </div>
-      <figure class="cs-media">
-        <div class="cs-media-ph"><span>✦</span><p>Level layout or puzzle breakdown goes here</p></div>
-        <figcaption class="todo">Add a caption, e.g. a level blockout or puzzle flowchart.</figcaption>
-      </figure>
+      <div class="cs-trio">
+        <figure class="cs-trio-item" style="--grow: 1.24">
+          <img src="assets/fish-can-man/level-layout.jpg" alt="Hand-drawn top-down layout of the kitchen level, showing the table, stove, counter, fridge and the start point, with the planned route in green" />
+          <figcaption><strong>1 · Layout</strong>Hand-drawn plan of the kitchen level</figcaption>
+        </figure>
+        <figure class="cs-trio-item" style="--grow: 1.13">
+          <img src="assets/fish-can-man/level-blockout.jpg" alt="Grey 3D blockout of the kitchen in Blender, with the table, stove, fridge, sink and counters" />
+          <figcaption><strong>2 · Blockout</strong>Rough 3D blockout I made for our artist</figcaption>
+        </figure>
+        <figure class="cs-trio-item" style="--grow: 0.52">
+          <img src="assets/fish-can-man/level-path.png" alt="Top-down view of the finished kitchen with arrows showing the paths a player can take" />
+          <figcaption><strong>3 · Paths</strong>Route diagram for documentation</figcaption>
+        </figure>
+      </div>
     </section>
 
     <!-- REFLECTION -->
@@ -256,20 +269,16 @@
         <div class="gallery-viewport">
           <div class="gallery-track">
             <figure class="gallery-slide">
-              <div class="cs-media-ph"><span>✦</span><p>Photo or screenshot 1</p></div>
-              <figcaption>Add a caption, e.g. the team at Level Up KL 2026.</figcaption>
+              <img src="assets/fish-can-man/gallery-ladder.jpg" alt="Sardonious the sardine climbing a wooden ladder, with the Q and E control icons floating over his two arms" loading="lazy" />
+              <figcaption>Climbing a ladder with Sardonious' arms. The control icons float right where the limbs are.</figcaption>
             </figure>
             <figure class="gallery-slide">
-              <div class="cs-media-ph"><span>✦</span><p>Photo or screenshot 2</p></div>
-              <figcaption>Add a caption, e.g. an early prototype.</figcaption>
+              <img src="assets/fish-can-man/gallery-kitchen.jpg" alt="Sardonious flopping across a kitchen counter, with the oxygen bar at the bottom left of the screen" loading="lazy" />
+              <figcaption>Flopping across the kitchen counter while the oxygen bar slowly drains.</figcaption>
             </figure>
             <figure class="gallery-slide">
-              <div class="cs-media-ph"><span>✦</span><p>Photo or screenshot 3</p></div>
-              <figcaption>Add a caption, e.g. playtesting.</figcaption>
-            </figure>
-            <figure class="gallery-slide">
-              <div class="cs-media-ph"><span>✦</span><p>Photo or screenshot 4</p></div>
-              <figcaption>Add a caption, e.g. accepting the award.</figcaption>
+              <img src="assets/fish-can-man/gallery-level-up-kl.jpg" alt="On stage at Level Up KL 2026 with the Fish Can Man Best Student Game Winner screen behind" loading="lazy" />
+              <figcaption>On stage at Level Up KL 2026, picking up Best Student Game.</figcaption>
             </figure>
           </div>
           <button class="gallery-btn gallery-prev" type="button" aria-label="Previous image">‹</button>
