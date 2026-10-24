@@ -995,3 +995,9 @@ a.card:hover .award-go { transform: translateX(4px); }
 }
 .card:hover .card-img { transform: scale(1.06); }
 .card-thumb.has-img::after { display: none; }
+
+/* Small text variant for long fact values, and controls note */
+.cs-facts-4 dd.dd-small { font-size: 0.9rem; line-height: 1.4; }
+.cs-controls { font-size: 0.95rem; color: var(--ink-soft); }
+.cs-controls strong { color: var(--pink-deep); }
+.cs-list strong { color: var(--pink-deep); }
