@@ -624,7 +624,7 @@ a.card { display: block; color: inherit; }
   max-width: 100%;
   font-size: clamp(2.6rem, 6vw, 4.4rem);
   font-weight: 800;
-  background: linear-gradient(120deg, #ff4f9a, #e5418f 40%, #b04aa3 70%, var(--grape));
+  background: linear-gradient(120deg, var(--pink-deep), var(--coral), var(--grape));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
