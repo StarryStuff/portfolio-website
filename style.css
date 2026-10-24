@@ -608,7 +608,10 @@ a.card { display: block; color: inherit; }
 }
 
 .back-link {
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   color: var(--pink-deep);
   margin-bottom: 18px;
@@ -617,6 +620,8 @@ a.card { display: block; color: inherit; }
 .back-link:hover { transform: translateX(-4px); }
 
 .page-title {
+  display: inline-block;
+  max-width: 100%;
   font-size: clamp(2.6rem, 6vw, 4.4rem);
   font-weight: 800;
   background: linear-gradient(120deg, var(--pink-deep), var(--coral), var(--grape));
